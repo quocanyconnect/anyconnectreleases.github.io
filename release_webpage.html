@@ -1,0 +1,117 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Stream App Releases</title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+            </head>
+            <body>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="text-capitalize">Stream App Releases</h2>
+                            <p class='attribute'>All Releases For AnyConnect Stream Sample App</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-10 col-md-10">
+                          <p class='attribute'><strong><u>Latest Release:</u></strong></p>
+                          <table class='table table-hover table-responsive'>
+                              <thead>
+                                  <tr>
+                                      <th>Release: 20190430</th>
+                                      <th>Time: 2019-05-02 14:58:33</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                      <tr>
+                                          <td class="col-xs-9">
+                                          <button class="label-success" href="itms-services://?action=download-manifest&url=http://artifactory.anyconnect.com/artifactory/libs-snapshot-local/release-package/20190430/manifest.plist">Install iOS App</button>
+                                          <button class="label-warning" href="http://artifactory.anyconnect.com/artifactory/libs-snapshot-local/release-package/20190430/app-armeabi-v7a-release.apk">Install Android App</button>
+                                          </td>
+                                          <td class="col-xs-3">
+                                              &nbsp<button class="btn">Release Note</button>
+                                          </td>
+                                      </tr>
+                                      <tr style="display:none;">
+                                          <td class="col-xs-9">
+                                              <p>
+</p><p>-*--*-
+</p><p>newwwwwwwwwwwwwwwwwwww
+</p><p>STREAM-148 CMake oprions added for rpath
+</p><p>- CMake oprions added for rpath
+</p><p>- Updated the Readme for RPi to setup environment
+</p><p>
+</p>
+                                          </td>
+                                          <td></td>
+                                      </tr>
+                              </tbody>
+                          </table>
+                        </div>
+                    </div>
+                    <br>
+                    <p class="attribute"><strong><u>Older Releases:</u></strong></p>
+        
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-10">
+                  <table class='table table-hover table-responsive'>
+                      <thead>
+                          <tr>
+                              <th>Release: 20190429</th>
+                              <th>Time: 2019-05-02 14:58:23</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td class="col-xs-9">
+                              <button class="label-success" href="itms-services://?action=download-manifest&url=http://artifactory.anyconnect.com/artifactory/libs-snapshot-local/release-package/20190429/manifest.plist">Install iOS App</button>
+                              <button class="label-warning" href="http://artifactory.anyconnect.com/artifactory/libs-snapshot-local/release-package/20190429/app-armeabi-v7a-release.apk">Install Android App</button>
+                              </td>
+                              <td class="col-xs-3">
+                                  &nbsp<button class="btn">Release Note</button>
+                              </td>
+                          </tr>
+                          <tr style="display:none;">
+                              <td class="col-xs-9">
+                                <p>
+</p><p>-*--*-
+</p><p>STREAM-148 CMake oprions added for rpath
+</p><p>- CMake oprions added for rpath
+</p><p>- Updated the Readme for RPi to setup environment
+</p><p>
+</p>
+                              </td>
+                              <td></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+            </div>
+        
+
+            </div>
+            <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){{
+                    $('td').on('click', '.btn', function(e){{
+                        e.preventDefault();
+                        var $this = $(this);
+                        var $nextRow = $this.closest('tr').next('tr');
+                        $nextRow.slideToggle("fast");
+                        $this.text(function(i, text){{
+                            if (text === 'Release Note') {{
+                                return 'Hide';
+                            }} else {{
+                                return 'Release Note';
+                            }};
+                        }});
+                    }});
+                }});
+            </script>
+        </body>
+        </html>
+        
