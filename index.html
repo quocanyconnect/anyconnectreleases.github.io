@@ -162,8 +162,16 @@
                         $this.text(function(i, text){{
                             if (text === 'Release Note') {{
                                 return 'Hide';
+                            }} else if (text === 'Android'){{
+                                return 'Hide ';
+                            }} else if (text === 'iOS'){{
+                                return ' Hide';
+                            }} else if (text === ' Hide'){{
+                                return 'iOS';
+                            }} else if (text === 'Hide '){{
+                                return 'Android';
                             }} else {{
-                                return 'Release Note';
+                            	return 'Release Note'
                             }};
                         }});
                     }});
